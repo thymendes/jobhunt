@@ -1,0 +1,324 @@
+*:root {
+    --color-background: #EAECF8;
+    --color-accent: #634FA8;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 73,15%;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+input {
+    width: fit-content;
+}
+
+/* Header */
+
+
+header {
+    margin-top: 4rem;
+}
+
+#container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#loginbtn {
+    width: 100px;
+    background-color: var(--color-accent);
+    padding: .8rem;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#loginbtn:hover {
+    opacity: 0.8;
+}
+
+/* Main */
+
+main {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 4rem 0;
+    background-image: url(./images/imagem.svg);
+    background-size: 600px, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+
+}
+
+h1 {
+    width: 50%;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+#description {
+    width: 40%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+}
+
+/* Searchbar */
+
+#searchbar {
+    display: flex;
+    background-color: rgba(256, 256, 256, .8);
+    padding: 1.3rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+    width: fit-content;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+input {
+    border-radius: 20px;
+    padding: 9px;
+}
+
+#busca {
+    width: 15px;
+    margin-right: 2px;
+}
+
+#pin {
+    width: 20px;
+    margin-right: 2px;
+}
+
+#jobs {
+    border-style: none;
+    margin-right: 1rem;
+    font-weight: 100;
+    font-size: 14px;
+    width: auto;
+}
+#location {
+    border-style: none;
+    margin-right: 1rem;
+    font-weight: 100;
+    font-size: 14px;
+    width: auto;
+}
+
+#searchbtn {
+    width: auto;
+    background-color: var(--color-accent);
+    padding: .8rem;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#searchbtn:hover {
+    opacity: 0.8;
+}
+
+#searchbar input {
+    background-color: rgb(248, 245, 245);
+}
+/* footer */
+
+footer {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+#sponsors {
+    display: flex;
+}
+
+#sponsors img{
+    width: 40px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+#sponsors img:hover {
+    opacity: 0.6;
+}
+
+/* Telas 850px */
+
+@media (max-width: 850px) {
+
+    main {
+        background-image: url(./images/imagem.svg);
+        background-size: 500px, cover;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        
+    
+    }
+    h1 {
+        width: 90%;
+        font-size: 60px;
+    }
+    
+    #description {
+        width: 80%;
+        font-size: 16px;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    #searchbar {  
+        flex-flow: column;
+        align-items: flex-start;
+    
+    }
+
+    #searchbar input {
+        margin-bottom: 0.8rem;
+    }
+
+    #searchbtn {
+        margin-left: 1rem;
+    }
+}
+
+/* Telas 750px */
+
+@media (max-width: 750px){
+    main {
+        background-image: none;    
+    }
+
+    #searchbar {
+        margin-top: 1rem;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+/* Telas 400px */
+
+@media (max-width: 560px) {
+    #container {
+        width: 80%;
+    }
+
+    #logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #description {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    main {
+        background-image: none;
+    }
+
+    #searchbar {
+        flex-direction: column;
+    }
+
+    #buscafield {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #buscafield input {
+        margin: 0;
+    }
+
+    #locationfield {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #locationfield input {
+        margin: 0;
+    }
+
+    #searchbtn {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        margin-top: 1rem;
+
+
+    }
+
+
+  
+}
+
+
+@media (max-width: 360px) {
+    #searchbar {
+        background:none;
+        padding: 0;
+    }
+}
